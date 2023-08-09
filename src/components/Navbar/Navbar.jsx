@@ -35,8 +35,8 @@ const Navbar = () => {
       {toggleMenu &&(
         <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
           <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={()=>setToggleMenu(false)} />
-          <ul className="app__navbar-smallscreen_links">
-              <li className="p__opensans"><a href="#home">Home</a></li>
+          <ul className="app__navbar-smallscreen_links" onClick={()=>setToggleMenu(false)}>
+              <li className="p__opensans"><a href="#home"  >Home</a></li>
               <li className="p__opensans"><a href="#about">About</a></li>
               <li className="p__opensans"><a href="#menu">Menu</a></li>
               <li className="p__opensans"><a href="#awards">Awards</a></li>
